@@ -1,0 +1,109 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+    display:flex;
+    padding-left: 15px;
+}
+.full-header{
+    display: flex;
+}
+.logo h2{
+    color:rgb(243, 171, 38)
+}   
+header{
+    background-color: rgb(236, 243, 239);
+    box-shadow: 1px 1px  7px 8px  rgb(245, 243, 243) ;
+}
+.middle-header{
+    text-align: center;
+}
+.middle-header ul{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+.full-header li{
+    padding-left: 70px;
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+
+list-style: none;
+}
+.full-header li:active{
+    color:orange;
+    text-decoration: none;
+}
+
+.cart{
+    position: relative;
+}
+.cart span{
+   
+background-color: antiquewhite;
+position:absolute;
+color: red;
+border-radius: 25px;
+
+font-weight: bold;
+}
+.right-list img{
+    width:35px;
+}
+.right-list {
+  display: flex;  
+float: right;
+ padding-left: 30px;
+
+}
+.right-position{
+    float: right;
+    gap: 40%;
+    margin: auto;
+}
+.menubar{
+    display: none;
+}
+.user-option-menu{
+    background-color: rgb(191, 250, 216);
+    position: absolute;
+    line-height: 15px;
+}
+.user-option-menu p{
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+}
+.logout{
+    cursor: pointer;
+}
+.mobile-menu-mode{
+    display: none;
+}
+
+/* mobile view  */
+@media only screen and (max-width: 560px) {
+    .full-header li{
+        padding-left: 60px;
+    }
+
+.right-position{
+    padding-left: 1px;
+}
+.right-list li{
+    padding-left:60px;
+    }
+.user-option-menu{
+    right:104px;
+}
+.middle-header ul{
+    display:none
+
+}
+.mobile-menu-mode{
+    display: block;
+    padding-left:60px;
+}
+}

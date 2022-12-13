@@ -1,0 +1,173 @@
+
+/* leftside of main  */
+
+.text-leftside
+{
+    max-width: 710px;
+}
+
+.bike-delivary h1{
+font-size: 3rem;
+}
+.bike-delivary h2{
+    font-size: 2.5rem;
+    color:rgb(248, 112, 0);
+    font-weight: 800;
+    }
+  .bike-delivary .hungry span{
+   
+    color:rgb(248, 112, 0);
+    font-weight: 900;
+
+}
+
+/* set the leftside text max-width for set particular width at left side  */
+.row{
+    padding: 50px;
+}
+  
+  
+
+.bike-delivary span{
+    font-size: 4rem;
+    color:orange;
+}
+.bike-delivary h5{
+    color: orange;
+    font-weight: 900;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color:#d5fce6;
+   max-width: 140px;
+   padding: 5px;
+   border-radius: 25px;
+}
+b{
+    font-weight: 900;
+}
+
+
+/* rightside main  */
+
+.right-card{
+   border-radius: 25px;
+ 
+    
+ 
+}
+.right-card p{
+    line-height: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+}
+.card-img
+{
+    position: absolute;
+    width:140px;
+    
+
+    
+    
+}
+
+
+
+.rightbox{
+ position: relative;
+ 
+       
+}
+.rightbox img{
+   
+} 
+
+.card-food{
+
+
+margin: 20px;
+
+
+
+}
+.full-food-item{
+    
+    
+}
+
+.card-food{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+padding: 12px;
+flex: 1;
+    
+    
+}
+  
+
+
+@media only screen and (max-width: 570px) {
+    
+    .rightbox {
+        padding-top: 40px;
+    } 
+    /* leave some space at  rightside image's top   */
+    .rightbox img{
+        width:90%;
+      
+
+    }
+    .card-food img{
+        width:100px;
+        
+    }
+    .full-food-item{
+        padding-top:100px;
+        padding-left: 10px;
+    }
+    
+    .card-food .right-cards{
+        position: absolute;
+    }
+
+
+
+    .bike-delivary span{
+        font-size: 2.5rem;
+        color:orange;
+    }
+    .right-img{
+        margin-top: 25px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .right-img img{
+        
+width:30%;
+    }
+    .right-cards{
+        width:200px;
+        height:auto;
+        background-color:antiquewhite;
+       position: absolute;
+       top:200px;
+       display: flex;
+       flex-direction: column;
+    }
+    .right-card.card-img{
+        width:122px;
+        
+        
+
+
+        
+    }
+  
+
+
+
+   
+
+}
+ 
