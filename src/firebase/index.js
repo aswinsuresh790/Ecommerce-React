@@ -13,7 +13,7 @@ import {getStorage} from 'firebase/storage'
     appId: "1:121159162914:web:ea680ed0e6bcc9403a7e7b",
     measurementId: "G-5Y6JK8JBCS"
   };
-const app=getApps.Length >0 ? getApp() : initializeApp(firebaseConfig);
+ const app=getApps.Length >0 ? getApp() : initializeApp(firebaseConfig);
 const firestore=getFirestore(app)
-const storage=getStorage()
-export {app,firestore,storage}
+const Storage=getStorage()
+export {app,firestore,Storage}
