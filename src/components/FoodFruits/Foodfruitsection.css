@@ -1,0 +1,23 @@
+
+.food-section-fruit h3{
+    border-bottom: 5px solid orange;
+    border-width: 6 px;
+    
+    width:450px;
+    }
+
+.button-swipe{
+    float:right;
+}
+.swipe-button2{
+    background-color: rgb(233, 170, 53);
+    color:white;
+}
+.swipe-button2:hover{
+    background-color: rgb(255, 166, 0);
+    color:white;
+}
+@media screen and (max-width: 580px){
+.food-section-fruit{
+    margin-top: 150px;
+}}

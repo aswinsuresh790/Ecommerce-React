@@ -13,6 +13,8 @@ font-size: 3rem;
     font-size: 2.5rem;
     color:rgb(248, 112, 0);
     font-weight: 800;
+    font-variant: normal;
+    
     }
   .bike-delivary .hungry span{
    
@@ -71,7 +73,9 @@ b{
     
 }
 
-
+.what-we-are{
+    margin-top:100px;
+}
 
 .rightbox{
  position: relative;

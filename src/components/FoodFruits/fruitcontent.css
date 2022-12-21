@@ -1,0 +1,41 @@
+
+.cardsq{
+    scroll-behavior: smooth;
+}
+.card-imgm{
+    width:200px;
+   
+}
+.rowm{
+    width:400px;
+    background-color: rgb(255, 243, 226);
+    margin:12px;   
+    border-radius: 25px;
+    box-shadow:  1px 1px 4px 3px  rgb(226, 226, 220) ;
+}
+a{
+    float:center;
+    margin-left: 180px;
+    line-height: 19px;
+    margin-top:-9px
+}
+.cardsq {
+    margin-top: 100px;
+    display: grid;
+    
+    grid-template-columns: auto auto auto auto auto auto;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+.cardsq::-webkit-scrollbar{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.card-bodym{
+    line-height: 18px;
+    font-family:Nexa;
+    font-size: 1.2rem;
+    color: rgb(87, 83, 83);
+}

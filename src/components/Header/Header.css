@@ -1,6 +1,10 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
 .logo{
     display:flex;
     padding-left: 15px;
@@ -12,8 +16,8 @@ body{
     color:rgb(243, 171, 38)
 }   
 header{
-    background-color: rgb(236, 243, 239);
-    box-shadow: 1px 1px  7px 8px  rgb(245, 243, 243) ;
+    background-color: #ffffff;
+    box-shadow: 1px 1px  7px 8px  rgb(255, 254, 254) ;
 }
 .middle-header{
     text-align: center;
@@ -21,7 +25,14 @@ header{
 .middle-header ul{
    
     display: flex;
-    flex-wrap: wrap;
+    
+    justify-content: space-evenly;    
+}
+.middle-header li{
+   
+    display: flex;
+margin-left: -100px;
+margin-top: 13px;
     justify-content: space-evenly;    
 }
 .full-header li{
@@ -69,15 +80,24 @@ float: right;
 .user-option-menu{
     background-color: rgb(191, 250, 216);
     position: absolute;
-    line-height: 15px;
+   margin:10px;
+    right: 0;
 }
 .user-option-menu p{
-padding-left: 15px;
+
 padding-right: 15px;
 position: relative;
 }
+.user-option-menu p:hover{
+    background: rgb(204, 152, 152);
+    }
 .logout{
     cursor: pointer;
+    text-align: center;
+    margin-left: 12px;
+    background: rgb(114, 131, 136);
+    color:white;
+    
 }
 .mobile-menu-mode{
     display: none;

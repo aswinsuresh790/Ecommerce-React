@@ -86,13 +86,13 @@ const logout=()=>{
                      {isMenu  &&(<motion.div initial={{scale:0.2,opacity:0.3}}
                      animate={{scale:1,opacity:1}}
                      exit={{scale:0.2,opacity:0.3}}
-                        className='user-option-menu'>
-                      { user && (user.email==="aswinsureshp66@gmail.com") &&<p><Link to="addcart">Add item <ImBoxAdd/> </Link></p> }
+                        className='user-option-menu text-center'>
+                      { user && (user.email==="aswinsureshp66@gmail.com") &&<p className='addNewItem'><Link to="addnewitem">Add item <ImBoxAdd/> </Link></p> }
                       <p className='mobile-menu-mode'>Home</p>
                       <p className='mobile-menu-mode'>Menu</p>
                       <p className='mobile-menu-mode'>About us</p>
                       <p className='mobile-menu-mode'> Service</p>
-                        <p  className="logout" onClick={logout}>Logout</p></motion.div>)}</div>
+                        <p  className="logout text-center " onClick={logout}>Logout</p></motion.div>)}</div>
                 </ul>
                
              </div>

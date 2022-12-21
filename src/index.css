@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family:'Groupe' ;
+  src: url(../src/font/@font-face/ab83b275830b2d585ea027c47e3b237a.woff2);
+}
+
+@font-face {
+  font-family:'Nexa' ;
+  src: url(../src/font/@font-face/NexaText-Trial-Heavy.ttf);
+}
