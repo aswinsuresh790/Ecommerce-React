@@ -8,7 +8,7 @@ import SelectFrom from './SelectFrom'
 
 
 const FoodFruitsection = () => {
-  const [{fooditem},dispatch] = useStateValue();
+  const [{fooditem,cartshow},dispatch] = useStateValue();
   const [scrollValue, setScrollValue] = useState(0);
   useEffect(() => {}, [scrollValue]);
   return (
@@ -24,6 +24,7 @@ const FoodFruitsection = () => {
 <div className='swipe-button2  m-1 p-1' onClick={() => setScrollValue(1000)}> <MdChevronRight  size={35}/></div>
 </div>
 </section>
+
 <Fruitcontent scrollValue={scrollValue} flag={true} data={fooditem?.filter((n)=>n.category==="fruits")}   />
    <div><SelectFrom/></div>
    </div>

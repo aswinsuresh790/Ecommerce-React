@@ -13,7 +13,7 @@ import { Navigate } from 'react-router'
 import { Link } from 'react-router-dom'
 
 const cart=(
-    <div className='cart'>
+    <div className='cart' >
     <div >
   <HiShoppingCart size={30}/>
   <span>0</span></div>
@@ -32,7 +32,7 @@ const Header = () => {
     const[isMenu,setIsMenu]=useState(false)  //menu for show  the menu when switch to mobile
     const firebaseAuth=getAuth(app)     //firebase authication  variable
     const provider=new GoogleAuthProvider()    //google sign in provider
-    const[{user},dispatch]=useStateValue()        // pass user and dispatch to useStateValue to perform the login and logout the user  details store in local storage to avoid lose age of data 
+    const[{user,cartshow},dispatch]=useStateValue()        // pass user and dispatch to useStateValue to perform the login and logout the user  details store in local storage to avoid lose age of data 
 
 
     const Login=async()=>{
@@ -52,7 +52,15 @@ const logout=()=>{
         user:null,
 })
 } //when user logout the menu hook will toggle login or logout. If logout it will go to no user state .The user details  stored in local storage will clear by performing an action  to set to its default state   
-  return (
+  
+const showcart =()=>{
+dispatch({
+  type:actionType.SET_CARTSHOW,
+  cartshow:!cartshow,
+})
+}
+
+return (
     <div>
         <header className='container-fluid'>
 
@@ -75,7 +83,7 @@ const logout=()=>{
              </div>
              <div className='right-position'>
              <ul className='right-list'>
-                    <li>{cart}</li>
+                    <li onClick={showcart}>{cart}</li>
                    <div>
                     <li onClick={Login}>
                         <motion.img whileTap={{scale:0.7}} 

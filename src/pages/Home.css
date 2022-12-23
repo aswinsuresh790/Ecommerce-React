@@ -79,7 +79,7 @@ b{
 
 .rightbox{
  position: relative;
- 
+ z-index: 1;
        
 }
 .rightbox img{

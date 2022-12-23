@@ -9,6 +9,8 @@ import d1 from '../Assets/img/d1.png'
 import f1 from '../Assets/img/f1.png'
 import k1 from   '../Assets/img/c4.png'
 import k2 from   '../Assets/img/c6.png'
+import Cartsection from '../components/cart/Cartsection'
+import { useStateValue } from '../redux/StateConttext'
 
 const Home = () => {
 const fooditems=[{
@@ -25,11 +27,12 @@ Type:"Mommos",price:220,Des: "Fry",Img:k1,
   Type:"kabbeb",price:280,Des: "Fry",Img:k2,
   },
 ]
-
+const [{cartshow},dispatch] = useStateValue();
 
 
   return (
     <div className='home'>
+     {cartshow  && <Cartsection/>}
     <div className='container-fluid'>
     <div className='row d-flex justify-content-between'>
        <div className='text-leftside  py-2     col-sm-5 col-md-6 px-md-2  col-lg-6  col-xl-6   col-xxl-6  '>
