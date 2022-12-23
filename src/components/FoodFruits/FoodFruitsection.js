@@ -3,6 +3,7 @@ import "./Foodfruitsection.css"
 import {MdChevronRight,MdChevronLeft} from "react-icons/md"
 import Fruitcontent from './Fruitcontent'
 import {useStateValue} from '../../redux/StateConttext'
+import SelectFrom from './SelectFrom'
 
 
 
@@ -23,8 +24,10 @@ const FoodFruitsection = () => {
 <div className='swipe-button2  m-1 p-1' onClick={() => setScrollValue(1000)}> <MdChevronRight  size={35}/></div>
 </div>
 </section>
-<Fruitcontent scrollValue={scrollValue} data={fooditem?.filter((n)=>n.category==="fruits")}   flag={true} />
+<Fruitcontent scrollValue={scrollValue} flag={true} data={fooditem?.filter((n)=>n.category==="fruits")}   />
+   <div><SelectFrom/></div>
    </div>
+
   )
 }
 

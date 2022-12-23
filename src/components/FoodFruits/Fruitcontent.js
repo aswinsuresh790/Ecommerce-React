@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 
 
-const Fruitcontent = ({data, scrollValue }) => {
+const Fruitcontent = ({data, scrollValue,flag }) => {
   const Fruitcontent = useRef();
 
   useEffect(() => {
@@ -18,12 +18,12 @@ const Fruitcontent = ({data, scrollValue }) => {
 
    
          
-         <div className='cardsq d-grid'    ref={Fruitcontent}>
+         <div className=  {`cardsq ${flag? "d-grid" :"d-flex flex-wrap justify-content-center"}`}    ref={Fruitcontent}>
      {data && data.map((item,index) =>           
   (<div className="rowm ">
   <div className="">
     <div className="cardm">
-    <motion.img  whileHover={{ scale: 1.2 }} className="card-imgm" key={index} src={item?.imagelocation} />
+    <motion.img  whileHover={{ scale: 1.2 }} className="card-imgm " key={index} src={item?.imagelocation} />
       <div className="card-bodym">
       
         <p className="card-textm text-center position absolute">{item?.name}</p>

@@ -87,7 +87,7 @@ const logout=()=>{
                      animate={{scale:1,opacity:1}}
                      exit={{scale:0.2,opacity:0.3}}
                         className='user-option-menu text-center'>
-                      { user && (user.email==="aswinsureshp66@gmail.com") &&<p className='addNewItem'><Link to="addnewitem">Add item <ImBoxAdd/> </Link></p> }
+                      { user && (user.email==="aswinsureshp66@gmail.com") &&<p className='addNewItem'><Link to="addnewitem">Add</Link></p> }
                       <p className='mobile-menu-mode'>Home</p>
                       <p className='mobile-menu-mode'>Menu</p>
                       <p className='mobile-menu-mode'>About us</p>

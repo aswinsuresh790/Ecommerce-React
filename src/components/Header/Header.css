@@ -21,6 +21,8 @@ header{
 }
 .middle-header{
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
 }
 .middle-header ul{
    
@@ -32,7 +34,7 @@ header{
    
     display: flex;
 margin-left: -100px;
-margin-top: 13px;
+margin-top: 12px;
     justify-content: space-evenly;    
 }
 .full-header li{
@@ -80,21 +82,33 @@ float: right;
 .user-option-menu{
     background-color: rgb(191, 250, 216);
     position: absolute;
-   margin:10px;
-    right: 0;
+   
+    
 }
 .user-option-menu p{
 
-padding-right: 15px;
+text-align: center;
 position: relative;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.4rem;
+}
+.addNewItem{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+text-align: center;
+    
+    
+    
+   
 }
 .user-option-menu p:hover{
     background: rgb(204, 152, 152);
     }
 .logout{
     cursor: pointer;
+    
     text-align: center;
-    margin-left: 12px;
+    
     background: rgb(114, 131, 136);
     color:white;
     
@@ -125,5 +139,8 @@ position: relative;
 .mobile-menu-mode{
     display: block;
     padding-left:60px;
+}
+.user-option-menu{
+    position: relative;
 }
 }
